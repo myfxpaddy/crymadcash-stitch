@@ -1,0 +1,96 @@
+{
+  "project": {
+    "id": "13924052312828416756",
+    "name": "projects/13924052312828416756",
+    "title": "Crymad Cash Mobile",
+    "createdAt": "2026-04-12",
+    "platform": "mobile",
+    "device": "390x844 (iPhone 14 Pro class)",
+    "totalScreens": 68
+  },
+  "theme": {
+    "mode": "dark",
+    "name": "Emerald Pulse (Mobile)",
+    "palette": { "bg": "#040d0a", "primary": "#10b981", "secondary": "#34d399", "accent": "#f59e0b" },
+    "fonts": { "body": "Inter", "mono": "JetBrains Mono" }
+  },
+  "screens": {
+    "dashboard": { "route": "/dashboard", "type": "page", "parent": null, "id": "b2a876957e774ce7967b7eef89467d03", "title": "Dashboard", "html": ".stitch/mobile/designs/dashboard.html", "png": ".stitch/mobile/designs/dashboard.png" },
+
+    "login": { "route": "/login", "type": "page", "parent": null, "id": "ae8fc1ecb5264409baa2e8cb4cc0ba47", "title": "Login", "html": ".stitch/mobile/designs/login.html", "png": ".stitch/mobile/designs/login.png" },
+    "register": { "route": "/register", "type": "page", "parent": null, "id": "5e80a83024e646cd99b7fdcd36f8833c", "title": "Registration", "html": ".stitch/mobile/designs/register.html", "png": ".stitch/mobile/designs/register.png" },
+    "register-verify-email": { "route": "/register/verify-email", "type": "page", "parent": "/register", "id": "fdaa6aad7c854917a839a682ef6a1eb4", "title": "Email Verification", "html": ".stitch/mobile/designs/register-verify-email.html", "png": ".stitch/mobile/designs/register-verify-email.png" },
+    "register-complete": { "route": "/register/complete", "type": "page", "parent": "/register", "id": "b4c15050d72c447386f3a523800a1d7f", "title": "Contact & Address", "html": ".stitch/mobile/designs/register-complete.html", "png": ".stitch/mobile/designs/register-complete.png" },
+    "register-kyc": { "route": "/register/kyc", "type": "page", "parent": "/register", "id": "c193365669d44663a2b5ff6c52046544", "title": "KYC Verification", "html": ".stitch/mobile/designs/register-kyc.html", "png": ".stitch/mobile/designs/register-kyc.png" },
+    "forgot-password": { "route": "/forgot-password", "type": "page", "parent": null, "id": "03057627b9f44d89a28d24f21b3214ba", "title": "Forgot Password", "html": ".stitch/mobile/designs/forgot-password.html", "png": ".stitch/mobile/designs/forgot-password.png" },
+    "login-verify-2fa": { "route": "/login/verify-2fa", "type": "page", "parent": "/login", "id": "e1bbbec4e2314e30b7d4650d9b30075b", "title": "Two-Factor Auth", "html": ".stitch/mobile/designs/login-verify-2fa.html", "png": ".stitch/mobile/designs/login-verify-2fa.png" },
+
+    "e-wallet": { "route": "/e-wallet", "type": "page", "parent": null, "id": "7228ed83b6a04f51b27b6f13447d5015", "title": "E-Wallet", "html": ".stitch/mobile/designs/e-wallet.html", "png": ".stitch/mobile/designs/e-wallet.png" },
+    "e-wallet-transfer": { "route": "/e-wallet/transfer", "type": "sheet", "parent": "/e-wallet", "id": "0a46768831fc4185ab3c5f1abad21bb7", "title": "Transfer Money", "html": ".stitch/mobile/designs/e-wallet-transfer.html", "png": ".stitch/mobile/designs/e-wallet-transfer.png" },
+    "e-wallet-bank-withdraw": { "route": "/e-wallet/bank-withdraw", "type": "sheet", "parent": "/e-wallet", "id": "28a76a7fca394362845620e45b2b6fe5", "title": "Bank Withdrawal", "html": ".stitch/mobile/designs/e-wallet-bank-withdraw.html", "png": ".stitch/mobile/designs/e-wallet-bank-withdraw.png" },
+    "e-wallet-crypto-swap": { "route": "/e-wallet/crypto-swap", "type": "sheet", "parent": "/e-wallet", "id": "9af59c408dff468cbb4918d27794864c", "title": "Swap to Crypto", "html": ".stitch/mobile/designs/e-wallet-crypto-swap.html", "png": ".stitch/mobile/designs/e-wallet-crypto-swap.png" },
+    "e-wallet-card-load": { "route": "/e-wallet/card-load", "type": "sheet", "parent": "/e-wallet", "id": "5a4fd006bfa54a9b89c42fcd013583c3", "title": "Load Card", "html": ".stitch/mobile/designs/e-wallet-card-load.html", "png": ".stitch/mobile/designs/e-wallet-card-load.png" },
+    "e-wallet-beneficiaries": { "route": "/e-wallet/beneficiaries", "type": "page", "parent": "/e-wallet", "id": "6c5a83b1f837430982f57d21970bd5df", "title": "Beneficiaries", "html": ".stitch/mobile/designs/e-wallet-beneficiaries.html", "png": ".stitch/mobile/designs/e-wallet-beneficiaries.png" },
+    "e-wallet-beneficiaries-add": { "route": "/e-wallet/beneficiaries/add", "type": "sheet", "parent": "/e-wallet/beneficiaries", "id": "2984ee9eae374c1d8b47f8aa133225f3", "title": "Add Beneficiary", "html": ".stitch/mobile/designs/e-wallet-beneficiaries-add.html", "png": ".stitch/mobile/designs/e-wallet-beneficiaries-add.png" },
+    "e-wallet-beneficiaries-edit": { "route": "/e-wallet/beneficiaries/edit", "type": "sheet", "parent": "/e-wallet/beneficiaries", "id": "6d1c474aef444af6a9af9a411e450c55", "title": "Edit Beneficiary", "html": ".stitch/mobile/designs/e-wallet-beneficiaries-edit.html", "png": ".stitch/mobile/designs/e-wallet-beneficiaries-edit.png" },
+    "e-wallet-beneficiaries-delete": { "route": "/e-wallet/beneficiaries/delete", "type": "sheet", "parent": "/e-wallet/beneficiaries", "id": "f2d13c036a8345429eaf4805e41572c5", "title": "Delete Beneficiary", "html": ".stitch/mobile/designs/e-wallet-beneficiaries-delete.html", "png": ".stitch/mobile/designs/e-wallet-beneficiaries-delete.png" },
+
+    "crypto": { "route": "/crypto", "type": "page", "parent": null, "id": "a6b2122278514ea883c75836ac638449", "title": "Crypto Wallet", "html": ".stitch/mobile/designs/crypto.html", "png": ".stitch/mobile/designs/crypto.png" },
+    "crypto-deposit": { "route": "/crypto/deposit", "type": "sheet", "parent": "/crypto", "id": "175a300ec4554b1da7197eb57f3ca297", "title": "Deposit Crypto", "html": ".stitch/mobile/designs/crypto-deposit.html", "png": ".stitch/mobile/designs/crypto-deposit.png" },
+    "crypto-withdraw": { "route": "/crypto/withdraw", "type": "sheet", "parent": "/crypto", "id": "8b5eb51585324936826bce9c7f18771a", "title": "Withdraw Crypto", "html": ".stitch/mobile/designs/crypto-withdraw.html", "png": ".stitch/mobile/designs/crypto-withdraw.png" },
+    "crypto-buy": { "route": "/crypto/buy", "type": "sheet", "parent": "/crypto", "id": "41f538b682094dd39016fb100d689205", "title": "Buy Crypto", "html": ".stitch/mobile/designs/crypto-buy.html", "png": ".stitch/mobile/designs/crypto-buy.png" },
+    "crypto-sync-card": { "route": "/crypto/sync-card", "type": "sheet", "parent": "/crypto", "id": "80edb7149d47493e907343f1e821ee55", "title": "Sync to Card", "html": ".stitch/mobile/designs/crypto-sync-card.html", "png": ".stitch/mobile/designs/crypto-sync-card.png" },
+    "crypto-sync-bank": { "route": "/crypto/sync-bank", "type": "sheet", "parent": "/crypto", "id": "16ba00dff8ce4ac3b23c2e52bb21f695", "title": "Sync to Bank", "html": ".stitch/mobile/designs/crypto-sync-bank.html", "png": ".stitch/mobile/designs/crypto-sync-bank.png" },
+    "crypto-swap": { "route": "/crypto/swap", "type": "sheet", "parent": "/crypto", "id": "ed1260bb8ef94612beaa9209d19ffab7", "title": "Swap Crypto", "html": ".stitch/mobile/designs/crypto-swap.html", "png": ".stitch/mobile/designs/crypto-swap.png" },
+
+    "cards": { "route": "/cards", "type": "page", "parent": null, "id": "9b934eb2cea64f5c892afb065e8a2321", "title": "Cards", "html": ".stitch/mobile/designs/cards.html", "png": ".stitch/mobile/designs/cards.png" },
+    "cards-setup": { "route": "/cards/setup", "type": "page", "parent": "/cards", "id": "30d82ee999ad4858bb5b91551d4c0ed3", "title": "Card Setup", "html": ".stitch/mobile/designs/cards-setup.html", "png": ".stitch/mobile/designs/cards-setup.png" },
+    "cards-order": { "route": "/cards/order", "type": "page", "parent": "/cards", "id": "0ef84b3ab3aa4eaa8a735c44213e4ebb", "title": "Order Card", "html": ".stitch/mobile/designs/cards-order.html", "png": ".stitch/mobile/designs/cards-order.png" },
+    "cards-fees": { "route": "/cards/fees", "type": "page", "parent": "/cards", "id": "d4c4a3a585a544a49b6f57f8d1a3e9de", "title": "Card Fees", "html": ".stitch/mobile/designs/cards-fees.html", "png": ".stitch/mobile/designs/cards-fees.png" },
+    "cards-load": { "route": "/cards/load", "type": "sheet", "parent": "/cards", "id": "1c38bf7ff25d483998de51ea702e4b70", "title": "Load Card (OTP)", "html": ".stitch/mobile/designs/cards-load.html", "png": ".stitch/mobile/designs/cards-load.png" },
+    "cards-lock": { "route": "/cards/lock", "type": "sheet", "parent": "/cards", "id": "17f77488ada648899485f11b382171a5", "title": "Lock Card", "html": ".stitch/mobile/designs/cards-lock.html", "png": ".stitch/mobile/designs/cards-lock.png" },
+    "cards-activate": { "route": "/cards/activate", "type": "sheet", "parent": "/cards", "id": "1f7b624494da4f538569f8539d741b50", "title": "Activate Card", "html": ".stitch/mobile/designs/cards-activate.html", "png": ".stitch/mobile/designs/cards-activate.png" },
+    "cards-credentials": { "route": "/cards/credentials", "type": "sheet", "parent": "/cards", "id": "e1f16797c0ff45cab084170854a1f97b", "title": "Card Credentials", "html": ".stitch/mobile/designs/cards-credentials.html", "png": ".stitch/mobile/designs/cards-credentials.png" },
+
+    "transactions": { "route": "/transactions", "type": "page", "parent": null, "id": "a330ffec2e7947c794c6b7bed83134f2", "title": "Transactions", "html": ".stitch/mobile/designs/transactions.html", "png": ".stitch/mobile/designs/transactions.png" },
+    "transactions-detail": { "route": "/transactions/detail", "type": "sheet", "parent": "/transactions", "id": "1f492735165d4a21b6b4c2564d15b4d7", "title": "Transaction Detail", "html": ".stitch/mobile/designs/transactions-detail.html", "png": ".stitch/mobile/designs/transactions-detail.png" },
+    "orders": { "route": "/orders", "type": "page", "parent": null, "id": "472ad3ebc4af460b8709b1030dbd6fa6", "title": "Orders", "html": ".stitch/mobile/designs/orders.html", "png": ".stitch/mobile/designs/orders.png" },
+    "orders-detail": { "route": "/orders/detail", "type": "sheet", "parent": "/orders", "id": "4fab7cee503d43ef9234c55d08889f9c", "title": "Order Detail", "html": ".stitch/mobile/designs/orders-detail.html", "png": ".stitch/mobile/designs/orders-detail.png" },
+    "orders-refund": { "route": "/orders/refund", "type": "sheet", "parent": "/orders", "id": "b1d1b9e0bb0b4eaa9b429a1f9bf21b58", "title": "Request Refund", "html": ".stitch/mobile/designs/orders-refund.html", "png": ".stitch/mobile/designs/orders-refund.png" },
+    "subscriptions": { "route": "/subscriptions", "type": "page", "parent": null, "id": "32d599da862048c19ad728753626d32d", "title": "Subscriptions", "html": ".stitch/mobile/designs/subscriptions.html", "png": ".stitch/mobile/designs/subscriptions.png" },
+    "subscriptions-detail": { "route": "/subscriptions/detail", "type": "sheet", "parent": "/subscriptions", "id": "10f945bc0aa64a92abf63fcabc41b6d6", "title": "Subscription Detail", "html": ".stitch/mobile/designs/subscriptions-detail.html", "png": ".stitch/mobile/designs/subscriptions-detail.png" },
+    "subscriptions-cancel": { "route": "/subscriptions/cancel", "type": "sheet", "parent": "/subscriptions", "id": "01e626f33961440d8d70ddd7d29d18ee", "title": "Cancel Subscription", "html": ".stitch/mobile/designs/subscriptions-cancel.html", "png": ".stitch/mobile/designs/subscriptions-cancel.png" },
+    "reports": { "route": "/reports", "type": "page", "parent": null, "id": "9afe2fc1e95d4e5ca4f315cf24cc9a13", "title": "Reports", "html": ".stitch/mobile/designs/reports.html", "png": ".stitch/mobile/designs/reports.png" },
+
+    "banking": { "route": "/banking", "type": "page", "parent": null, "id": "9b53180abd9749c1a375a8e971e158b7", "title": "Banking Portal", "html": ".stitch/mobile/designs/banking.html", "png": ".stitch/mobile/designs/banking.png" },
+    "banking-subscribe": { "route": "/banking/subscribe", "type": "sheet", "parent": "/banking", "id": "e75a1b021ff546e78ef63b20a404c370", "title": "Activate Banking", "html": ".stitch/mobile/designs/banking-subscribe.html", "png": ".stitch/mobile/designs/banking-subscribe.png" },
+    "banking-pay": { "route": "/banking/pay", "type": "sheet", "parent": "/banking", "id": "7fade0bfeec84ee0b86492e8a1a64f93", "title": "Banking Payment", "html": ".stitch/mobile/designs/banking-pay.html", "png": ".stitch/mobile/designs/banking-pay.png" },
+    "banking-dashboard": { "route": "/banking/dashboard", "type": "page", "parent": "/banking", "id": "00f8050411a14d3e995361f532ba3faa", "title": "Banking Dashboard", "html": ".stitch/mobile/designs/banking-dashboard.html", "png": ".stitch/mobile/designs/banking-dashboard.png" },
+
+    "notifications": { "route": "/notifications", "type": "page", "parent": null, "id": "4e878362f45c47b493fdf14a27db213d", "title": "Notifications", "html": ".stitch/mobile/designs/notifications.html", "png": ".stitch/mobile/designs/notifications.png" },
+    "help": { "route": "/help", "type": "page", "parent": null, "id": "2cb5ecd623974e7ab209018adc28c52f", "title": "Help / FAQs", "html": ".stitch/mobile/designs/help.html", "png": ".stitch/mobile/designs/help.png" },
+
+    "team": { "route": "/team", "type": "page", "parent": null, "id": "3d88fa7547ec49baa9b8734690390391", "title": "Team Management", "html": ".stitch/mobile/designs/team.html", "png": ".stitch/mobile/designs/team.png" },
+    "team-invite": { "route": "/team/invite", "type": "sheet", "parent": "/team", "id": "affb22222d1146198c6a3e364ed7ca20", "title": "Invite Member", "html": ".stitch/mobile/designs/team-invite.html", "png": ".stitch/mobile/designs/team-invite.png" },
+    "team-batch-import": { "route": "/team/batch-import", "type": "sheet", "parent": "/team", "id": "a3c396bb25ca406fb5b4b12e39de2247", "title": "Batch Import", "html": ".stitch/mobile/designs/team-batch-import.html", "png": ".stitch/mobile/designs/team-batch-import.png" },
+    "team-edit-role": { "route": "/team/edit-role", "type": "sheet", "parent": "/team", "id": "9b26d043eee544768fa34e932a1a6097", "title": "Edit Role", "html": ".stitch/mobile/designs/team-edit-role.html", "png": ".stitch/mobile/designs/team-edit-role.png" },
+    "team-remove": { "route": "/team/remove", "type": "sheet", "parent": "/team", "id": "bc54140f045e4979a8bc8b0efbdafa7c", "title": "Remove Member", "html": ".stitch/mobile/designs/team-remove.html", "png": ".stitch/mobile/designs/team-remove.png" },
+    "payouts": { "route": "/payouts", "type": "page", "parent": null, "id": "3a351f2156f14c79842569e1a05c125e", "title": "Payouts", "html": ".stitch/mobile/designs/payouts.html", "png": ".stitch/mobile/designs/payouts.png" },
+    "payouts-create": { "route": "/payouts/create", "type": "sheet", "parent": "/payouts", "id": "778ce6b773fa4f629b567c261e6b5e7c", "title": "Create Payout", "html": ".stitch/mobile/designs/payouts-create.html", "png": ".stitch/mobile/designs/payouts-create.png" },
+    "payouts-batch": { "route": "/payouts/batch", "type": "sheet", "parent": "/payouts", "id": "7ba347a3177f4e3493252b136dbd5e34", "title": "Batch Payout", "html": ".stitch/mobile/designs/payouts-batch.html", "png": ".stitch/mobile/designs/payouts-batch.png" },
+    "payouts-detail": { "route": "/payouts/detail", "type": "sheet", "parent": "/payouts", "id": "6b53ba6c085245f6bac189328c1a5bb1", "title": "Payout Detail", "html": ".stitch/mobile/designs/payouts-detail.html", "png": ".stitch/mobile/designs/payouts-detail.png" },
+    "recurring-payments": { "route": "/recurring-payments", "type": "page", "parent": null, "id": "dfe850b58e944248b2835f9247703a09", "title": "Recurring Payments", "html": ".stitch/mobile/designs/recurring-payments.html", "png": ".stitch/mobile/designs/recurring-payments.png" },
+    "recurring-payments-create": { "route": "/recurring-payments/create", "type": "sheet", "parent": "/recurring-payments", "id": "bf422a4796604e03abf1a5c2eed72d52", "title": "Create Recurring", "html": ".stitch/mobile/designs/recurring-payments-create.html", "png": ".stitch/mobile/designs/recurring-payments-create.png" },
+    "recurring-payments-edit": { "route": "/recurring-payments/edit", "type": "sheet", "parent": "/recurring-payments", "id": "c502c2131f5d4d51a24fc4f3cea0d0d9", "title": "Edit Recurring", "html": ".stitch/mobile/designs/recurring-payments-edit.html", "png": ".stitch/mobile/designs/recurring-payments-edit.png" },
+    "recurring-payments-cancel": { "route": "/recurring-payments/cancel", "type": "sheet", "parent": "/recurring-payments", "id": "f09f31ad3fd84c048d5120a1b5989d38", "title": "Cancel Recurring", "html": ".stitch/mobile/designs/recurring-payments-cancel.html", "png": ".stitch/mobile/designs/recurring-payments-cancel.png" },
+    "rewards": { "route": "/rewards", "type": "page", "parent": null, "id": "123f2848ad3249ebaccc94d016ccff12", "title": "Rewards Program", "html": ".stitch/mobile/designs/rewards.html", "png": ".stitch/mobile/designs/rewards.png" },
+    "rewards-issue": { "route": "/rewards/issue", "type": "sheet", "parent": "/rewards", "id": "f1391de2c3054e70b83a7b88c27f3968", "title": "Issue Reward", "html": ".stitch/mobile/designs/rewards-issue.html", "png": ".stitch/mobile/designs/rewards-issue.png" },
+    "rewards-batch-issue": { "route": "/rewards/batch-issue", "type": "sheet", "parent": "/rewards", "id": "672eae9fa6c049a4816e6294029bf381", "title": "Batch Issue Rewards", "html": ".stitch/mobile/designs/rewards-batch-issue.html", "png": ".stitch/mobile/designs/rewards-batch-issue.png" },
+    "rewards-debit": { "route": "/rewards/debit", "type": "sheet", "parent": "/rewards", "id": "d8283fc8225845a58463ed3e81ab3fdc", "title": "Debit User Reward", "html": ".stitch/mobile/designs/rewards-debit.html", "png": ".stitch/mobile/designs/rewards-debit.png" },
+    "rewards-refund": { "route": "/rewards/refund", "type": "sheet", "parent": "/rewards", "id": "1c84f1d173b44aa89edd2139cd709565", "title": "Refund Reward", "html": ".stitch/mobile/designs/rewards-refund.html", "png": ".stitch/mobile/designs/rewards-refund.png" },
+
+    "settings-api": { "route": "/settings/api", "type": "page", "parent": null, "id": "2fbb7463c2f24dba8a19e05d84e82c6a", "title": "API & Webhooks", "html": ".stitch/mobile/designs/settings-api.html", "png": ".stitch/mobile/designs/settings-api.png" },
+    "profile": { "route": "/profile", "type": "page", "parent": null, "id": "c84b4031c8714e73ae0a8aa8b5d489c8", "title": "Profile Settings", "html": ".stitch/mobile/designs/profile.html", "png": ".stitch/mobile/designs/profile.png" },
+    "security": { "route": "/security", "type": "page", "parent": null, "id": "f10d90d5226648f09e459a8c254d5c21", "title": "Security Settings", "html": ".stitch/mobile/designs/security.html", "png": ".stitch/mobile/designs/security.png" }
+  }
+}

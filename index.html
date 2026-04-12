@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRYMAD CA$H — Design Canvas</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #040d0a;
+    --surface: rgba(44,55,51,0.4);
+    --border: rgba(16,185,129,0.08);
+    --primary: #10b981;
+    --secondary: #34d399;
+    --text: #d9e5df;
+    --muted: #bbcabf;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', system-ui, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .bg-canvas { position: fixed; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; }
+  .blob { position: absolute; filter: blur(80px); opacity: 0.3; border-radius: 50%;
+    animation: drift 60s ease-in-out infinite; }
+  .blob:nth-child(1) { width: 600px; height: 600px; background: #10b981; top: -15%; left: -15%; animation-delay: 0s; }
+  .blob:nth-child(2) { width: 500px; height: 500px; background: #34d399; bottom: -10%; right: -10%; animation-delay: -20s; }
+  .blob:nth-child(3) { width: 400px; height: 400px; background: #10b981; top: 30%; right: 15%; animation-delay: -40s; }
+  .blob:nth-child(4) { width: 700px; height: 700px; background: #0b1512; bottom: 20%; left: 20%; animation-delay: -10s; }
+  @keyframes drift {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(40px, -20px) scale(1.05); }
+    66% { transform: translate(-30px, 30px) scale(0.95); }
+  }
+  .diagonal {
+    position: absolute; inset: 0;
+    background: linear-gradient(45deg, transparent 48%, rgba(16,185,129,0.05) 50%, transparent 52%);
+    background-size: 40px 40px;
+  }
+
+  main {
+    flex: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 32px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .wordmark {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(to right, #10b981, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+  }
+  .tagline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--muted);
+    margin-bottom: 48px;
+  }
+  h1 {
+    font-size: clamp(48px, 6vw, 84px);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 0.95;
+    margin-bottom: 24px;
+    background: linear-gradient(to right, #10b981, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .lede {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--muted);
+    max-width: 680px;
+    margin-bottom: 56px;
+  }
+
+  .canvas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  @media (max-width: 720px) {
+    .canvas-grid { grid-template-columns: 1fr; }
+  }
+
+  .canvas-card {
+    background: var(--surface);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border);
+    border-radius: 32px;
+    padding: 40px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  .canvas-card:hover {
+    border-color: rgba(16,185,129,0.4);
+    box-shadow: 0 0 60px rgba(16,185,129,0.15);
+    transform: translateY(-4px);
+  }
+  .canvas-card::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 160px; height: 160px;
+    background: radial-gradient(circle, rgba(16,185,129,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(16,185,129,0.1);
+    border: 1px solid rgba(16,185,129,0.2);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+  .canvas-title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    background: linear-gradient(to right, #10b981, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .canvas-desc {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.5;
+    margin-bottom: 28px;
+  }
+  .stats-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+  .stat b { color: var(--primary); font-weight: 700; }
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--primary);
+    font-weight: 700;
+    transition: gap 0.3s ease;
+  }
+  .canvas-card:hover .cta { gap: 14px; }
+
+  footer {
+    padding: 24px 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(217,229,223,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .pulse-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 8px #10b981;
+    margin-right: 8px;
+    animation: pulse 2s ease-in-out infinite;
+    vertical-align: middle;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+  }
+</style>
+</head>
+<body>
+  <div class="bg-canvas">
+    <div class="blob"></div><div class="blob"></div><div class="blob"></div><div class="blob"></div>
+    <div class="diagonal"></div>
+  </div>
+
+  <main>
+    <div class="wordmark">CRYMAD CA$H</div>
+    <div class="tagline">Emerald Pulse · Digital Finance Platform</div>
+    <h1>Design Canvas</h1>
+    <p class="lede">
+      Complete UI system for a fantasy-futuristic digital banking platform — bioluminescent,
+      glass-morphism, living backgrounds. Pick a canvas to explore 68 fully-designed screens per
+      platform, each clickable to open the live interactive HTML.
+    </p>
+
+    <div class="canvas-grid">
+      <a class="canvas-card" href=".stitch/designs/index.html">
+        <div class="badge">Desktop · 1440 px</div>
+        <div class="canvas-title">Web App</div>
+        <div class="canvas-desc">
+          Fully-responsive dashboard layout with top nav, right-edge theme panel, and system status strip.
+          68 screens covering every route and modal.
+        </div>
+        <div class="stats-row">
+          <div class="stat"><b>30</b> Pages</div>
+          <div class="stat"><b>38</b> Modals</div>
+          <div class="stat"><b>68</b> Total</div>
+        </div>
+        <div class="cta">Open Web Canvas →</div>
+      </a>
+
+      <a class="canvas-card" href=".stitch/mobile/designs/index.html">
+        <div class="badge">Mobile · 390 × 844</div>
+        <div class="canvas-title">Mobile App</div>
+        <div class="canvas-desc">
+          Native iOS-class mobile experience with bottom tab bar, bottom-sheet modals, and touch-first
+          interactions. Same 68 screens, reimagined for the thumb.
+        </div>
+        <div class="stats-row">
+          <div class="stat"><b>30</b> Pages</div>
+          <div class="stat"><b>38</b> Sheets</div>
+          <div class="stat"><b>68</b> Total</div>
+        </div>
+        <div class="cta">Open Mobile Canvas →</div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div><span class="pulse-dot"></span>SYSTEM OPERATIONAL · 136 SCREENS · EMERALD PULSE</div>
+    <div>CRYMAD CA$H © 2026</div>
+  </footer>
+</body>
+</html>

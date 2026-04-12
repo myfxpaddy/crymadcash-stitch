@@ -1,0 +1,106 @@
+{
+  "project": {
+    "id": "9505690438983037118",
+    "name": "projects/9505690438983037118",
+    "title": "Crymad Cash",
+    "createdAt": "2026-04-12",
+    "totalScreens": 68
+  },
+  "theme": {
+    "mode": "dark",
+    "name": "Emerald Pulse",
+    "stitchDisplayName": "Emerald Pulse",
+    "stitchDesignSystemAsset": "assets/24db8865625743c693f3327a7c9f30db",
+    "palette": {
+      "bg": "#040d0a",
+      "primary": "#10b981",
+      "secondary": "#34d399",
+      "accent": "#f59e0b"
+    },
+    "lightMode": {
+      "name": "Arctic Light",
+      "bg": "#f0f5fa",
+      "primary": "#0d9488",
+      "secondary": "#2563eb"
+    },
+    "fonts": { "body": "Inter", "mono": "JetBrains Mono" }
+  },
+  "screens": {
+    "dashboard": { "route": "/dashboard", "type": "page", "parent": null, "id": "321811b214744d50b3ba83766ff898c8", "title": "Dashboard", "width": 2560, "height": 2408, "html": ".stitch/designs/dashboard.html", "png": ".stitch/designs/dashboard.png" },
+    "login": { "route": "/login", "type": "page", "parent": null, "id": "3ed1120e9a0f418aaf1fca0e17980137", "title": "Login", "width": 2560, "height": 2048, "html": ".stitch/designs/login.html", "png": ".stitch/designs/login.png" },
+    "register": { "route": "/register", "type": "page", "parent": null, "id": "d10dcd9cedf040968f826a01f0a5c040", "title": "Registration", "width": 2560, "height": 2048, "html": ".stitch/designs/register.html", "png": ".stitch/designs/register.png" },
+    "register-verify-email": { "route": "/register/verify-email", "type": "page", "parent": "/register", "id": "ddc7e18ce00745fb92720ca184494c01", "title": "Email Verification", "width": 2560, "height": 2048, "html": ".stitch/designs/register-verify-email.html", "png": ".stitch/designs/register-verify-email.png" },
+    "register-complete": { "route": "/register/complete", "type": "page", "parent": "/register", "id": "cc18c15869764b2bad3a0528b9f107c3", "title": "Contact & Address", "width": 2816, "height": 2250, "html": ".stitch/designs/register-complete.html", "png": ".stitch/designs/register-complete.png" },
+    "register-kyc": { "route": "/register/kyc", "type": "page", "parent": "/register", "id": "9a5a9f3183954c87bdfcd54869630ee4", "title": "KYC Verification", "width": 2560, "height": 2208, "html": ".stitch/designs/register-kyc.html", "png": ".stitch/designs/register-kyc.png" },
+    "forgot-password": { "route": "/forgot-password", "type": "page", "parent": null, "id": "b848d65285b14f95a99eb66cf26df58f", "title": "Forgot Password", "width": 2560, "height": 2048, "html": ".stitch/designs/forgot-password.html", "png": ".stitch/designs/forgot-password.png" },
+    "login-verify-2fa": { "route": "/login/verify-2fa", "type": "page", "parent": "/login", "id": "728599380d4e475994b751dccaa92059", "title": "Two-Factor Auth", "width": 2560, "height": 2048, "html": ".stitch/designs/login-verify-2fa.html", "png": ".stitch/designs/login-verify-2fa.png" },
+
+    "e-wallet": { "route": "/e-wallet", "type": "page", "parent": null, "id": "15eb425e282643e4908bf4be2849ecb2", "title": "E-Wallet", "width": 2560, "height": 2660, "html": ".stitch/designs/e-wallet.html", "png": ".stitch/designs/e-wallet.png" },
+    "e-wallet-transfer": { "route": "/e-wallet/transfer", "type": "modal", "parent": "/e-wallet", "id": "472f7359bbd44a5ebdccb345459099b1", "title": "Transfer Money", "width": 2816, "height": 2252, "html": ".stitch/designs/e-wallet-transfer.html", "png": ".stitch/designs/e-wallet-transfer.png" },
+    "e-wallet-bank-withdraw": { "route": "/e-wallet/bank-withdraw", "type": "modal", "parent": "/e-wallet", "id": "768d585cca1b445584a6ad2450cad616", "title": "Bank Withdrawal", "width": 2560, "height": 2048, "html": ".stitch/designs/e-wallet-bank-withdraw.html", "png": ".stitch/designs/e-wallet-bank-withdraw.png" },
+    "e-wallet-crypto-swap": { "route": "/e-wallet/crypto-swap", "type": "modal", "parent": "/e-wallet", "id": "7c1da94c92c8421882844d7032a20169", "title": "Swap to Crypto", "width": 2560, "height": 2048, "html": ".stitch/designs/e-wallet-crypto-swap.html", "png": ".stitch/designs/e-wallet-crypto-swap.png" },
+    "e-wallet-card-load": { "route": "/e-wallet/card-load", "type": "modal", "parent": "/e-wallet", "id": "2e0f42c1e44e41848e225210b13e816b", "title": "Load Card", "width": 2560, "height": 2048, "html": ".stitch/designs/e-wallet-card-load.html", "png": ".stitch/designs/e-wallet-card-load.png" },
+    "e-wallet-beneficiaries": { "route": "/e-wallet/beneficiaries", "type": "page", "parent": "/e-wallet", "id": "aa4c0c91e94841b9b241f8f95c3dc1be", "title": "Beneficiaries", "width": 2560, "height": 2486, "html": ".stitch/designs/e-wallet-beneficiaries.html", "png": ".stitch/designs/e-wallet-beneficiaries.png" },
+    "e-wallet-beneficiaries-add": { "route": "/e-wallet/beneficiaries/add", "type": "modal", "parent": "/e-wallet/beneficiaries", "id": "30e8b5c551fc41caa94f039859137eee", "title": "Add Beneficiary", "width": 2560, "height": 2048, "html": ".stitch/designs/e-wallet-beneficiaries-add.html", "png": ".stitch/designs/e-wallet-beneficiaries-add.png" },
+    "e-wallet-beneficiaries-edit": { "route": "/e-wallet/beneficiaries/edit", "type": "modal", "parent": "/e-wallet/beneficiaries", "id": "293e793e08bb4bc4bb0ae7fe079fdf32", "title": "Edit Beneficiary", "width": 2752, "height": 2432, "html": ".stitch/designs/e-wallet-beneficiaries-edit.html", "png": ".stitch/designs/e-wallet-beneficiaries-edit.png" },
+    "e-wallet-beneficiaries-delete": { "route": "/e-wallet/beneficiaries/delete", "type": "modal", "parent": "/e-wallet/beneficiaries", "id": "e32a23a42d894be7a8d27dc784a4bdc8", "title": "Delete Beneficiary", "width": 2560, "height": 2048, "html": ".stitch/designs/e-wallet-beneficiaries-delete.html", "png": ".stitch/designs/e-wallet-beneficiaries-delete.png" },
+
+    "crypto": { "route": "/crypto", "type": "page", "parent": null, "id": "9471587c8bfa4b2284eecc752504c362", "title": "Crypto Wallet", "width": 2560, "height": 3680, "html": ".stitch/designs/crypto.html", "png": ".stitch/designs/crypto.png" },
+    "crypto-deposit": { "route": "/crypto/deposit", "type": "modal", "parent": "/crypto", "id": "b6a3ed29ce57485b99f6f6ec1de8245a", "title": "Deposit Crypto", "width": 2560, "height": 2048, "html": ".stitch/designs/crypto-deposit.html", "png": ".stitch/designs/crypto-deposit.png" },
+    "crypto-withdraw": { "route": "/crypto/withdraw", "type": "modal", "parent": "/crypto", "id": "6266a1fb11424ea0bc2c2df34799a7dd", "title": "Withdraw Crypto", "width": 2560, "height": 2048, "html": ".stitch/designs/crypto-withdraw.html", "png": ".stitch/designs/crypto-withdraw.png" },
+    "crypto-buy": { "route": "/crypto/buy", "type": "modal", "parent": "/crypto", "id": "d2d5b403f612429095a426d183357fa9", "title": "Buy Crypto", "width": 2560, "height": 2048, "html": ".stitch/designs/crypto-buy.html", "png": ".stitch/designs/crypto-buy.png" },
+    "crypto-sync-card": { "route": "/crypto/sync-card", "type": "modal", "parent": "/crypto", "id": "83e4d71a08924e039daf87b9b2a19d09", "title": "Sync to Card", "width": 2560, "height": 2048, "html": ".stitch/designs/crypto-sync-card.html", "png": ".stitch/designs/crypto-sync-card.png" },
+    "crypto-sync-bank": { "route": "/crypto/sync-bank", "type": "modal", "parent": "/crypto", "id": "f1a1f43cb250450c815ee4e3a326a1d4", "title": "Sync to Bank", "width": 2560, "height": 2048, "html": ".stitch/designs/crypto-sync-bank.html", "png": ".stitch/designs/crypto-sync-bank.png" },
+    "crypto-swap": { "route": "/crypto/swap", "type": "modal", "parent": "/crypto", "id": "f67130923dc54ad093dc508a8eea2297", "title": "Swap Crypto", "width": 2624, "height": 2100, "html": ".stitch/designs/crypto-swap.html", "png": ".stitch/designs/crypto-swap.png" },
+
+    "cards": { "route": "/cards", "type": "page", "parent": null, "id": "6b410fb4d16849c4aaa74099cdecc73a", "title": "Cards", "width": 2560, "height": 3038, "html": ".stitch/designs/cards.html", "png": ".stitch/designs/cards.png" },
+    "cards-setup": { "route": "/cards/setup", "type": "page", "parent": "/cards", "id": "844e9141762845f7bb9ab93e927c0f3d", "title": "Card Setup", "width": 2560, "height": 3098, "html": ".stitch/designs/cards-setup.html", "png": ".stitch/designs/cards-setup.png" },
+    "cards-order": { "route": "/cards/order", "type": "page", "parent": "/cards", "id": "4e1382c7e0214b30bafb497ff8bb49b9", "title": "Order Card", "width": 2560, "height": 2528, "html": ".stitch/designs/cards-order.html", "png": ".stitch/designs/cards-order.png" },
+    "cards-fees": { "route": "/cards/fees", "type": "page", "parent": "/cards", "id": "5035132979ec4f2fa04b7962421ea2f4", "title": "Card Fees", "width": 2560, "height": 4112, "html": ".stitch/designs/cards-fees.html", "png": ".stitch/designs/cards-fees.png" },
+    "cards-load": { "route": "/cards/load", "type": "modal", "parent": "/cards", "id": "3398f3cba78843fb9e2f673535bae4e2", "title": "Load Card (OTP)", "width": 2560, "height": 2048, "html": ".stitch/designs/cards-load.html", "png": ".stitch/designs/cards-load.png" },
+    "cards-lock": { "route": "/cards/lock", "type": "modal", "parent": "/cards", "id": "a04f3511432c467192b314097e0620a5", "title": "Lock Card", "width": 2560, "height": 2048, "html": ".stitch/designs/cards-lock.html", "png": ".stitch/designs/cards-lock.png" },
+    "cards-activate": { "route": "/cards/activate", "type": "modal", "parent": "/cards", "id": "225f3e47b913487987555e713489e9cf", "title": "Activate Card", "width": 2816, "height": 2252, "html": ".stitch/designs/cards-activate.html", "png": ".stitch/designs/cards-activate.png" },
+    "cards-credentials": { "route": "/cards/credentials", "type": "modal", "parent": "/cards", "id": "b43ea707af99439bb7da2e64214e5758", "title": "Card Credentials", "width": 2560, "height": 2048, "html": ".stitch/designs/cards-credentials.html", "png": ".stitch/designs/cards-credentials.png" },
+
+    "transactions": { "route": "/transactions", "type": "page", "parent": null, "id": "ff067e39554f4ff7b47e24030585a265", "title": "Transactions", "width": 2560, "height": 2366, "html": ".stitch/designs/transactions.html", "png": ".stitch/designs/transactions.png" },
+    "transactions-detail": { "route": "/transactions/detail", "type": "modal", "parent": "/transactions", "id": "f0b46b61fccb46fa8adad5ebe8086901", "title": "Transaction Detail", "width": 2560, "height": 2048, "html": ".stitch/designs/transactions-detail.html", "png": ".stitch/designs/transactions-detail.png" },
+    "orders": { "route": "/orders", "type": "page", "parent": null, "id": "c47ff853eae24fa789021c68b9253e97", "title": "Orders", "width": 2560, "height": 2048, "html": ".stitch/designs/orders.html", "png": ".stitch/designs/orders.png" },
+    "orders-detail": { "route": "/orders/detail", "type": "modal", "parent": "/orders", "id": "69b7f37e76ea46bc8e7b51b05959e21b", "title": "Order Detail", "width": 2560, "height": 2048, "html": ".stitch/designs/orders-detail.html", "png": ".stitch/designs/orders-detail.png" },
+    "orders-refund": { "route": "/orders/refund", "type": "modal", "parent": "/orders", "id": "7cbe7fa24d8c44d98e22d3006dda0cba", "title": "Request Refund", "width": 2560, "height": 2048, "html": ".stitch/designs/orders-refund.html", "png": ".stitch/designs/orders-refund.png" },
+    "subscriptions": { "route": "/subscriptions", "type": "page", "parent": null, "id": "ce7b9293222b4f51bb7844ff8b0e1bb1", "title": "Subscriptions", "width": 2560, "height": 2082, "html": ".stitch/designs/subscriptions.html", "png": ".stitch/designs/subscriptions.png" },
+    "subscriptions-detail": { "route": "/subscriptions/detail", "type": "modal", "parent": "/subscriptions", "id": "77c18d65c38c4b52835aea2bbb22d7a9", "title": "Subscription Detail", "width": 2560, "height": 2048, "html": ".stitch/designs/subscriptions-detail.html", "png": ".stitch/designs/subscriptions-detail.png" },
+    "subscriptions-cancel": { "route": "/subscriptions/cancel", "type": "modal", "parent": "/subscriptions", "id": "6982ffcf8d2c43a7908686aaf793a632", "title": "Cancel Subscription", "width": 2560, "height": 2048, "html": ".stitch/designs/subscriptions-cancel.html", "png": ".stitch/designs/subscriptions-cancel.png" },
+    "reports": { "route": "/reports", "type": "page", "parent": null, "id": "141fbad323d148cebb2e6bb0b8ece8f9", "title": "Reports", "width": 2560, "height": 3628, "html": ".stitch/designs/reports.html", "png": ".stitch/designs/reports.png" },
+
+    "banking": { "route": "/banking", "type": "page", "parent": null, "id": "f1e0a62f0b744e2da84bb41c8c04b35c", "title": "Banking Portal", "width": 2560, "height": 3294, "html": ".stitch/designs/banking.html", "png": ".stitch/designs/banking.png" },
+    "banking-subscribe": { "route": "/banking/subscribe", "type": "modal", "parent": "/banking", "id": "59f3727b68824a789523298b05dec0a0", "title": "Activate Banking", "width": 2560, "height": 2048, "html": ".stitch/designs/banking-subscribe.html", "png": ".stitch/designs/banking-subscribe.png" },
+    "banking-pay": { "route": "/banking/pay", "type": "modal", "parent": "/banking", "id": "779eff094e33463aaf5b1a3cf71c044d", "title": "Banking Payment", "width": 2560, "height": 2048, "html": ".stitch/designs/banking-pay.html", "png": ".stitch/designs/banking-pay.png" },
+    "banking-dashboard": { "route": "/banking/dashboard", "type": "page", "parent": "/banking", "id": "b9fa7e69fddc49d888d1171d63a988b3", "title": "Banking Dashboard", "width": 2560, "height": 2960, "html": ".stitch/designs/banking-dashboard.html", "png": ".stitch/designs/banking-dashboard.png" },
+
+    "notifications": { "route": "/notifications", "type": "page", "parent": null, "id": "636da8c9d01d4851b2851f844f599aad", "title": "Notifications", "width": 2560, "height": 3054, "html": ".stitch/designs/notifications.html", "png": ".stitch/designs/notifications.png" },
+    "help": { "route": "/help", "type": "page", "parent": null, "id": "003561301f7b41ac85c1227d3b050932", "title": "Help / FAQs", "width": 2560, "height": 2938, "html": ".stitch/designs/help.html", "png": ".stitch/designs/help.png" },
+
+    "team": { "route": "/team", "type": "page", "parent": null, "id": "0c929d7a7af04c8081c5f631ae07d91f", "title": "Team Management", "width": 2560, "height": 2112, "html": ".stitch/designs/team.html", "png": ".stitch/designs/team.png" },
+    "team-invite": { "route": "/team/invite", "type": "modal", "parent": "/team", "id": "bbfe740aea9146b38234e142fca58553", "title": "Invite Member", "width": 2560, "height": 2048, "html": ".stitch/designs/team-invite.html", "png": ".stitch/designs/team-invite.png" },
+    "team-batch-import": { "route": "/team/batch-import", "type": "modal", "parent": "/team", "id": "cb5198f381ba4379a7efe5b8785c673a", "title": "Batch Import", "width": 2560, "height": 2048, "html": ".stitch/designs/team-batch-import.html", "png": ".stitch/designs/team-batch-import.png" },
+    "team-edit-role": { "route": "/team/edit-role", "type": "modal", "parent": "/team", "id": "fba10b910bee4e5e9e316009de7a903e", "title": "Edit Role", "width": 2560, "height": 2048, "html": ".stitch/designs/team-edit-role.html", "png": ".stitch/designs/team-edit-role.png" },
+    "team-remove": { "route": "/team/remove", "type": "modal", "parent": "/team", "id": "4756159999e341b5a25525e0a3ef7ec9", "title": "Remove Member", "width": 2560, "height": 2048, "html": ".stitch/designs/team-remove.html", "png": ".stitch/designs/team-remove.png" },
+    "payouts": { "route": "/payouts", "type": "page", "parent": null, "id": "f2e18d7cf9a44dd59f2e930482f50eed", "title": "Payouts", "width": 2560, "height": 2664, "html": ".stitch/designs/payouts.html", "png": ".stitch/designs/payouts.png" },
+    "payouts-create": { "route": "/payouts/create", "type": "modal", "parent": "/payouts", "id": "f2a42c611dc6486e9ffe5d37f89552e2", "title": "Create Payout", "width": 2560, "height": 2048, "html": ".stitch/designs/payouts-create.html", "png": ".stitch/designs/payouts-create.png" },
+    "payouts-batch": { "route": "/payouts/batch", "type": "modal", "parent": "/payouts", "id": "31eedd344b854b77a85e5e38c823b703", "title": "Batch Payout", "width": 2560, "height": 2048, "html": ".stitch/designs/payouts-batch.html", "png": ".stitch/designs/payouts-batch.png" },
+    "payouts-detail": { "route": "/payouts/detail", "type": "modal", "parent": "/payouts", "id": "73ac72070b99408c9e5f56c104d7ba4c", "title": "Payout Detail", "width": 2560, "height": 2048, "html": ".stitch/designs/payouts-detail.html", "png": ".stitch/designs/payouts-detail.png" },
+    "recurring-payments": { "route": "/recurring-payments", "type": "page", "parent": null, "id": "e16f1ff250c748518a40889ec9d34e91", "title": "Recurring Payments", "width": 2560, "height": 2152, "html": ".stitch/designs/recurring-payments.html", "png": ".stitch/designs/recurring-payments.png" },
+    "recurring-payments-create": { "route": "/recurring-payments/create", "type": "modal", "parent": "/recurring-payments", "id": "d78593728d334e11a177626bf9a8f7a6", "title": "Create Recurring", "width": 2560, "height": 2132, "html": ".stitch/designs/recurring-payments-create.html", "png": ".stitch/designs/recurring-payments-create.png" },
+    "recurring-payments-edit": { "route": "/recurring-payments/edit", "type": "modal", "parent": "/recurring-payments", "id": "8dcf09e2424c449d829a003c5a323dd6", "title": "Edit Recurring", "width": 2560, "height": 2048, "html": ".stitch/designs/recurring-payments-edit.html", "png": ".stitch/designs/recurring-payments-edit.png" },
+    "recurring-payments-cancel": { "route": "/recurring-payments/cancel", "type": "modal", "parent": "/recurring-payments", "id": "c832da302ca94454bf1fcc796e70ff8b", "title": "Cancel Recurring", "width": 2560, "height": 2048, "html": ".stitch/designs/recurring-payments-cancel.html", "png": ".stitch/designs/recurring-payments-cancel.png" },
+    "rewards": { "route": "/rewards", "type": "page", "parent": null, "id": "819b5e56488b4cdba21f35b191e8eb19", "title": "Rewards Program", "width": 2560, "height": 2516, "html": ".stitch/designs/rewards.html", "png": ".stitch/designs/rewards.png" },
+    "rewards-issue": { "route": "/rewards/issue", "type": "modal", "parent": "/rewards", "id": "1da7e08265ac4e6c905d9cd3e78c44c0", "title": "Issue Reward", "width": 2560, "height": 2048, "html": ".stitch/designs/rewards-issue.html", "png": ".stitch/designs/rewards-issue.png" },
+    "rewards-batch-issue": { "route": "/rewards/batch-issue", "type": "modal", "parent": "/rewards", "id": "37d668e9cdd74639b0c9dea44393cae7", "title": "Batch Issue Rewards", "width": 2688, "height": 2252, "html": ".stitch/designs/rewards-batch-issue.html", "png": ".stitch/designs/rewards-batch-issue.png" },
+    "rewards-debit": { "route": "/rewards/debit", "type": "modal", "parent": "/rewards", "id": "e869d975fa604414a036b571d60cf9b6", "title": "Debit User Reward", "width": 2560, "height": 2048, "html": ".stitch/designs/rewards-debit.html", "png": ".stitch/designs/rewards-debit.png" },
+    "rewards-refund": { "route": "/rewards/refund", "type": "modal", "parent": "/rewards", "id": "5582311e25114fd497f71d1e9ccc77e9", "title": "Refund Reward", "width": 2560, "height": 2048, "html": ".stitch/designs/rewards-refund.html", "png": ".stitch/designs/rewards-refund.png" },
+
+    "settings-api": { "route": "/settings/api", "type": "page", "parent": null, "id": "bbeb8e38adf540628648e72c7b59f730", "title": "API & Webhooks", "width": 2570, "height": 2778, "html": ".stitch/designs/settings-api.html", "png": ".stitch/designs/settings-api.png" },
+    "profile": { "route": "/profile", "type": "page", "parent": null, "id": "dff76c74ca134ad0ab45c7110daca894", "title": "Profile Settings", "width": 2560, "height": 2444, "html": ".stitch/designs/profile.html", "png": ".stitch/designs/profile.png" },
+    "security": { "route": "/security", "type": "page", "parent": null, "id": "56e1d80482b34f9d8b78ece5b68aa740", "title": "Security Settings", "width": 2560, "height": 3334, "html": ".stitch/designs/security.html", "png": ".stitch/designs/security.png" }
+  }
+}
