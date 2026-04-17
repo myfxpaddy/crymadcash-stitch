@@ -116,6 +116,13 @@
     box-shadow: 0 0 20px rgba(16,185,129,0.15);
   }
   .filter-btn:hover { color: var(--text); border-color: rgba(16,185,129,0.3); }
+  .filter-btn.personal.active { background: linear-gradient(to right, #10b981, #34d399); color: #040d0a; border-color: transparent; }
+  .filter-btn.business.active { background: linear-gradient(to right, #f59e0b, #fbbf24); color: #040d0a; border-color: transparent; }
+  .filter-btn.institutional.active { background: linear-gradient(to right, #34d399, #10b981); color: #040d0a; border-color: transparent; }
+  .filter-btn.personal { color: #10b981; border-color: rgba(16,185,129,0.3); }
+  .filter-btn.business { color: #f59e0b; border-color: rgba(245,158,11,0.3); }
+  .filter-btn.institutional { color: #34d399; border-color: rgba(52,211,153,0.3); }
+
 
   .section-heading {
     max-width: 1800px;
@@ -283,7 +290,9 @@
     <button class="filter-btn active" data-filter="all">All 108</button>
     <button class="filter-btn" data-filter="page">Pages 42</button>
     <button class="filter-btn" data-filter="modal">Modals 66</button>
-    <button class="filter-btn" data-filter="institutional">Institutional 40</button>
+    <button class="filter-btn personal" data-filter="personal">Personal 49</button>
+    <button class="filter-btn business" data-filter="business">Business 19</button>
+    <button class="filter-btn institutional" data-filter="institutional">Institutional 40</button>
   </div>
 
   <h2 class="section-heading">Core<span class="section-count">1 page</span></h2>
@@ -367,33 +376,33 @@
 
   <h2 class="section-heading">Team & Payouts<span class="section-count">2 pages · 7 modals</span></h2>
   <div class="grid">
-    <a class="card" data-type="page" href="team.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="team.png" alt=""><span class="type-badge page">PAGE</span></div><div class="meta"><div class="title">Team Management</div><div class="route">/team</div></div></a>
-    <a class="card" data-type="modal" href="team-invite.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="team-invite.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Invite Member</div><div class="route">/team/invite</div></div></a>
-    <a class="card" data-type="modal" href="team-batch-import.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="team-batch-import.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Batch Import</div><div class="route">/team/batch-import</div></div></a>
-    <a class="card" data-type="modal" href="team-edit-role.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="team-edit-role.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Edit Role</div><div class="route">/team/edit-role</div></div></a>
-    <a class="card" data-type="modal" href="team-remove.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="team-remove.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Remove Member</div><div class="route">/team/remove</div></div></a>
-    <a class="card" data-type="page" href="payouts.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="payouts.png" alt=""><span class="type-badge page">PAGE</span></div><div class="meta"><div class="title">Payouts</div><div class="route">/payouts</div></div></a>
-    <a class="card" data-type="modal" href="payouts-create.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="payouts-create.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Create Payout</div><div class="route">/payouts/create</div></div></a>
-    <a class="card" data-type="modal" href="payouts-batch.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="payouts-batch.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Batch Payout</div><div class="route">/payouts/batch</div></div></a>
-    <a class="card" data-type="modal" href="payouts-detail.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="payouts-detail.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Payout Detail</div><div class="route">/payouts/detail</div></div></a>
+    <a class="card" data-type="page business" href="team.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="team.png" alt=""><span class="type-badge page">PAGE</span></div><div class="meta"><div class="title">Team Management</div><div class="route">/team</div></div></a>
+    <a class="card" data-type="modal business" href="team-invite.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="team-invite.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Invite Member</div><div class="route">/team/invite</div></div></a>
+    <a class="card" data-type="modal business" href="team-batch-import.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="team-batch-import.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Batch Import</div><div class="route">/team/batch-import</div></div></a>
+    <a class="card" data-type="modal business" href="team-edit-role.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="team-edit-role.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Edit Role</div><div class="route">/team/edit-role</div></div></a>
+    <a class="card" data-type="modal business" href="team-remove.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="team-remove.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Remove Member</div><div class="route">/team/remove</div></div></a>
+    <a class="card" data-type="page business" href="payouts.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="payouts.png" alt=""><span class="type-badge page">PAGE</span></div><div class="meta"><div class="title">Payouts</div><div class="route">/payouts</div></div></a>
+    <a class="card" data-type="modal business" href="payouts-create.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="payouts-create.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Create Payout</div><div class="route">/payouts/create</div></div></a>
+    <a class="card" data-type="modal business" href="payouts-batch.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="payouts-batch.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Batch Payout</div><div class="route">/payouts/batch</div></div></a>
+    <a class="card" data-type="modal business" href="payouts-detail.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="payouts-detail.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Payout Detail</div><div class="route">/payouts/detail</div></div></a>
   </div>
 
   <h2 class="section-heading">Recurring & Rewards<span class="section-count">2 pages · 7 modals</span></h2>
   <div class="grid">
-    <a class="card" data-type="page" href="recurring-payments.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="recurring-payments.png" alt=""><span class="type-badge page">PAGE</span></div><div class="meta"><div class="title">Recurring Payments</div><div class="route">/recurring-payments</div></div></a>
-    <a class="card" data-type="modal" href="recurring-payments-create.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="recurring-payments-create.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Create Recurring</div><div class="route">/recurring-payments/create</div></div></a>
-    <a class="card" data-type="modal" href="recurring-payments-edit.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="recurring-payments-edit.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Edit Recurring</div><div class="route">/recurring-payments/edit</div></div></a>
-    <a class="card" data-type="modal" href="recurring-payments-cancel.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="recurring-payments-cancel.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Cancel Recurring</div><div class="route">/recurring-payments/cancel</div></div></a>
-    <a class="card" data-type="page" href="rewards.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="rewards.png" alt=""><span class="type-badge page">PAGE</span></div><div class="meta"><div class="title">Rewards Program</div><div class="route">/rewards</div></div></a>
-    <a class="card" data-type="modal" href="rewards-issue.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="rewards-issue.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Issue Reward</div><div class="route">/rewards/issue</div></div></a>
-    <a class="card" data-type="modal" href="rewards-batch-issue.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="rewards-batch-issue.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Batch Issue Rewards</div><div class="route">/rewards/batch-issue</div></div></a>
-    <a class="card" data-type="modal" href="rewards-debit.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="rewards-debit.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Debit User Reward</div><div class="route">/rewards/debit</div></div></a>
-    <a class="card" data-type="modal" href="rewards-refund.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="rewards-refund.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Refund Reward</div><div class="route">/rewards/refund</div></div></a>
+    <a class="card" data-type="page business" href="recurring-payments.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="recurring-payments.png" alt=""><span class="type-badge page">PAGE</span></div><div class="meta"><div class="title">Recurring Payments</div><div class="route">/recurring-payments</div></div></a>
+    <a class="card" data-type="modal business" href="recurring-payments-create.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="recurring-payments-create.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Create Recurring</div><div class="route">/recurring-payments/create</div></div></a>
+    <a class="card" data-type="modal business" href="recurring-payments-edit.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="recurring-payments-edit.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Edit Recurring</div><div class="route">/recurring-payments/edit</div></div></a>
+    <a class="card" data-type="modal business" href="recurring-payments-cancel.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="recurring-payments-cancel.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Cancel Recurring</div><div class="route">/recurring-payments/cancel</div></div></a>
+    <a class="card" data-type="page business" href="rewards.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="rewards.png" alt=""><span class="type-badge page">PAGE</span></div><div class="meta"><div class="title">Rewards Program</div><div class="route">/rewards</div></div></a>
+    <a class="card" data-type="modal business" href="rewards-issue.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="rewards-issue.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Issue Reward</div><div class="route">/rewards/issue</div></div></a>
+    <a class="card" data-type="modal business" href="rewards-batch-issue.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="rewards-batch-issue.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Batch Issue Rewards</div><div class="route">/rewards/batch-issue</div></div></a>
+    <a class="card" data-type="modal business" href="rewards-debit.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="rewards-debit.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Debit User Reward</div><div class="route">/rewards/debit</div></div></a>
+    <a class="card" data-type="modal business" href="rewards-refund.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="rewards-refund.png" alt=""><span class="type-badge modal">MODAL</span></div><div class="meta"><div class="title">Refund Reward</div><div class="route">/rewards/refund</div></div></a>
   </div>
 
   <h2 class="section-heading">Settings<span class="section-count">3 pages</span></h2>
   <div class="grid">
-    <a class="card" data-type="page" href="settings-api.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="settings-api.png" alt=""><span class="type-badge page">PAGE</span></div><div class="meta"><div class="title">API & Webhooks</div><div class="route">/settings/api</div></div></a>
+    <a class="card" data-type="page business" href="settings-api.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="settings-api.png" alt=""><span class="type-badge page">PAGE</span></div><div class="meta"><div class="title">API & Webhooks</div><div class="route">/settings/api</div></div></a>
     <a class="card" data-type="page" href="profile.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="profile.png" alt=""><span class="type-badge page">PAGE</span></div><div class="meta"><div class="title">Profile Settings</div><div class="route">/profile</div></div></a>
     <a class="card" data-type="page" href="security.html" target="_blank"><div class="thumb-wrap"><img class="thumb" src="security.png" alt=""><span class="type-badge page">PAGE</span></div><div class="meta"><div class="title">Security Settings</div><div class="route">/security</div></div></a>
   </div>
@@ -492,18 +501,35 @@
 <script>
   const buttons = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.card');
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      cards.forEach(c => {
-        if (filter === 'all') { c.classList.remove('hidden'); return; }
-        const types = (c.dataset.type || '').split(' ');
+  function applyFilter(filter) {
+    buttons.forEach(b => b.classList.toggle('active', b.dataset.filter === filter));
+    cards.forEach(c => {
+      const types = (c.dataset.type || '').split(' ');
+      if (filter === 'all') { c.classList.remove('hidden'); return; }
+      if (filter === 'personal') {
+        // personal = NOT business AND NOT institutional
+        const isBiz = types.includes('business');
+        const isInst = types.includes('institutional');
+        c.classList.toggle('hidden', isBiz || isInst);
+      } else {
         c.classList.toggle('hidden', !types.includes(filter));
-      });
+      }
     });
-  });
+    // Smoothly scroll to top of cards area when filter changes
+    const anchor = document.querySelector('.filter-bar');
+    if (anchor) window.scrollTo({ top: anchor.offsetTop - 20, behavior: 'smooth' });
+  }
+  buttons.forEach(btn => btn.addEventListener('click', () => {
+    applyFilter(btn.dataset.filter);
+    history.replaceState(null, '', '#' + btn.dataset.filter);
+  }));
+  // Apply hash from URL on load
+  (function() {
+    const hash = (window.location.hash || '#all').replace('#', '');
+    if (['all','page','modal','personal','business','institutional'].includes(hash)) {
+      applyFilter(hash);
+    }
+  })();
 </script>
 </body>
 </html>
